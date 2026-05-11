@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0061)file:///C:/Users/Alexandra/Downloads/gym_program_offline.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -390,8 +390,202 @@ body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--t
   <div class="header-sub">Mon/Wed/Fri gym · Tue/Thu/Sat cardio</div>
 </div>
 
-<div class="phase-bar" id="phaseTabs"></div>
-<div id="app"></div>
+<div class="phase-bar" id="phaseTabs"><button class="phase-btn active" onclick="setPhase(0)">Month 1</button><button class="phase-btn" onclick="setPhase(1)">Month 2</button><button class="phase-btn" onclick="setPhase(2)">Month 3</button><button class="phase-btn" onclick="setPhase(3)">Schedule</button><button class="phase-btn" onclick="setPhase(4)">Tips</button></div>
+<div id="app">
+    <div class="day-strip" id="dayStrip">
+      <div class="day-chip gym selected" onclick="setDay(0)">
+        <span class="chip-name">Mon</span>
+        <span class="chip-type">Gym</span>
+      </div>
+      <div class="day-chip cardio" onclick="setDay(1)">
+        <span class="chip-name">Tue</span>
+        <span class="chip-type">Cardio</span>
+      </div>
+      <div class="day-chip gym" onclick="setDay(2)">
+        <span class="chip-name">Wed</span>
+        <span class="chip-type">Gym</span>
+      </div>
+      <div class="day-chip cardio" onclick="setDay(3)">
+        <span class="chip-name">Thu</span>
+        <span class="chip-type">Cardio</span>
+      </div>
+      <div class="day-chip gym" onclick="setDay(4)">
+        <span class="chip-name">Fri</span>
+        <span class="chip-type">Gym</span>
+      </div>
+      <div class="day-chip cardio" onclick="setDay(5)">
+        <span class="chip-name">Sat</span>
+        <span class="chip-type">Cardio</span>
+      </div>
+      <div class="day-chip rest" onclick="setDay(6)">
+        <span class="chip-name">Sun</span>
+        <span class="chip-type">Rest</span>
+      </div></div>
+    <div class="phase-desc-banner">Foundation: learn the movements and build consistency. Light weights, higher reps. Master form before adding load.</div>
+    <div class="content">
+      <div class="session-title">Monday</div>
+      <div class="session-sub">Gym · Push — Chest &amp; Triceps</div>
+      
+    <div class="section-block">
+      <div class="section-header" onclick="toggleSection(&#39;warmup&#39;)">
+        <div class="section-dot warmup"></div>
+        <span class="section-label-text" style="color:var(--warmup)">Warm-up</span>
+        <span class="section-time">~10 min</span>
+        <svg class="chevron open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+      <div class="section-body warmup" style="max-height:9999px">
+        
+    <div class="stretch-row">
+      <div class="stretch-top">
+        <span class="stretch-name">Light cardio (bike/treadmill)</span>
+        <span class="stretch-dur">3–5 min</span>
+      </div>
+      <div class="stretch-tip">RPE 2–3. Get blood flowing before any upper body work.</div>
+    </div>
+    <div class="stretch-row">
+      <div class="stretch-top">
+        <span class="stretch-name">Arm circle</span>
+        <span class="stretch-dur">15 reps each direction</span>
+      </div>
+      <div class="stretch-tip">Small to large circles. Warms the shoulder joint fully before pressing.</div>
+    </div>
+    <div class="stretch-row">
+      <div class="stretch-top">
+        <span class="stretch-name">Cross-body shoulder swing</span>
+        <span class="stretch-dur">10 reps each arm</span>
+      </div>
+      <div class="stretch-tip">Swing each arm across the body. Loosens the rear delt and chest.</div>
+    </div>
+    <div class="stretch-row">
+      <div class="stretch-top">
+        <span class="stretch-name">Band pull-apart (or towel)</span>
+        <span class="stretch-dur">15 reps</span>
+      </div>
+      <div class="stretch-tip">Hold a band or towel wide, pull it apart across your chest. Activates the rotator cuff.</div>
+    </div>
+    <div class="stretch-row">
+      <div class="stretch-top">
+        <span class="stretch-name">Push-up (slow, wide grip)</span>
+        <span class="stretch-dur">8 reps</span>
+      </div>
+      <div class="stretch-tip">3 seconds down, 1 second up. Primes the chest and triceps with bodyweight before loading.</div>
+    </div>
+    <div class="stretch-row">
+      <div class="stretch-top">
+        <span class="stretch-name">Wall chest stretch</span>
+        <span class="stretch-dur">8 reps each side</span>
+      </div>
+      <div class="stretch-tip">Place palm on wall, rotate body away. Dynamic movement — don't hold, just pulse gently.</div>
+    </div>
+    <div class="stretch-row">
+      <div class="stretch-top">
+        <span class="stretch-name">Shoulder dislocate (band/towel)</span>
+        <span class="stretch-dur">10 reps</span>
+      </div>
+      <div class="stretch-tip">Hold wide, pass overhead and behind. Critical for shoulder mobility before pressing.</div>
+    </div>
+      </div>
+    </div>
+    <div class="section-block">
+      <div class="section-header" onclick="toggleSection(&#39;main&#39;)">
+        <div class="section-dot main"></div>
+        <span class="section-label-text" style="color:var(--gym)">Push — Chest &amp; Triceps</span>
+        <span class="section-time">60–90 min</span>
+        <svg class="chevron open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+      <div class="section-body" style="max-height:9999px">
+        
+    <div class="ex-row">
+      <div class="ex-top">
+        <span class="ex-name">Dumbbell bench press</span>
+        <span class="ex-sets">3×12</span>
+      </div>
+      <div class="ex-desc">Lie on a flat bench, dumbbells at chest height. Press up until arms are nearly straight, then lower slowly. Keep shoulder blades squeezed together.</div>
+    </div>
+    <div class="ex-row">
+      <div class="ex-top">
+        <span class="ex-name">Incline dumbbell press</span>
+        <span class="ex-sets">3×12</span>
+      </div>
+      <div class="ex-desc">Set bench to 30–45°. Press dumbbells from shoulder height up and slightly together. Works the upper chest more than flat press.</div>
+    </div>
+    <div class="ex-row">
+      <div class="ex-top">
+        <span class="ex-name">Dumbbell chest fly</span>
+        <span class="ex-sets">3×12</span>
+      </div>
+      <div class="ex-desc">Lie on a bench, dumbbells above your chest with a slight elbow bend. Lower them wide in an arc until you feel a chest stretch, then bring them back together.</div>
+    </div>
+    <div class="ex-row">
+      <div class="ex-top">
+        <span class="ex-name">Tricep pushdown</span>
+        <span class="ex-sets">3×12</span>
+      </div>
+      <div class="ex-desc">Grip handle at chest height, push down by extending elbows until arms are straight. Keep elbows tucked to your sides.</div>
+    </div>
+    <div class="ex-row">
+      <div class="ex-top">
+        <span class="ex-name">Push-up</span>
+        <span class="ex-sets">3×10</span>
+      </div>
+      <div class="ex-desc">Standard push-up with hands just wider than shoulder-width. Lower chest to floor, press back up. Keep body in a straight line — don't let hips sag.</div>
+    </div>
+      </div>
+    </div>
+    <div class="section-block">
+      <div class="section-header" onclick="toggleSection(&#39;cooldown&#39;)">
+        <div class="section-dot cooldown"></div>
+        <span class="section-label-text" style="color:var(--cooldown)">Cool-down</span>
+        <span class="section-time">~10 min</span>
+        <svg class="chevron open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+      <div class="section-body cooldown" style="max-height:9999px">
+        
+    <div class="stretch-row">
+      <div class="stretch-top">
+        <span class="stretch-name">Doorway chest stretch</span>
+        <span class="stretch-dur">40s each side</span>
+      </div>
+      <div class="stretch-tip">Forearm on door frame at 90°, rotate body away. Releases pec minor after all that pressing.</div>
+    </div>
+    <div class="stretch-row">
+      <div class="stretch-top">
+        <span class="stretch-name">Cross-body shoulder stretch</span>
+        <span class="stretch-dur">30s each arm</span>
+      </div>
+      <div class="stretch-tip">Pull one arm across your chest with the other. Targets rear delt and posterior shoulder.</div>
+    </div>
+    <div class="stretch-row">
+      <div class="stretch-top">
+        <span class="stretch-name">Tricep overhead stretch</span>
+        <span class="stretch-dur">30s each arm</span>
+      </div>
+      <div class="stretch-tip">Arm bent behind head, use other hand to gently push the elbow down.</div>
+    </div>
+    <div class="stretch-row">
+      <div class="stretch-top">
+        <span class="stretch-name">Child's pose with arm reach</span>
+        <span class="stretch-dur">45s each side</span>
+      </div>
+      <div class="stretch-tip">From child's pose, walk both hands to one side. Opens the lat and shoulder simultaneously.</div>
+    </div>
+    <div class="stretch-row">
+      <div class="stretch-top">
+        <span class="stretch-name">Prone shoulder stretch</span>
+        <span class="stretch-dur">30s each side</span>
+      </div>
+      <div class="stretch-tip">Lie face down, one arm out at 90°. Roll slightly onto that shoulder. Deep posterior capsule stretch.</div>
+    </div>
+    <div class="stretch-row">
+      <div class="stretch-top">
+        <span class="stretch-name">Neck side stretch</span>
+        <span class="stretch-dur">20s each side</span>
+      </div>
+      <div class="stretch-tip">Ear toward shoulder, breathe slowly. Releases upper traps which work hard during pressing.</div>
+    </div>
+      </div>
+    </div>
+    </div></div>
 
 <script>
 const exDesc = {
@@ -427,92 +621,157 @@ const exDesc = {
   "Barbell row": "Hinge forward ~45°, bar in hands. Pull to your lower chest, driving elbows back. Keep back flat. Lower under control.",
   "EZ bar curl": "Grip the angled part of the EZ bar. Curl up keeping elbows stationary. Angled grip reduces wrist strain.",
   "Skull crushers": "Lie on bench, EZ bar above forehead. Bend elbows to lower weight toward forehead, then extend back up. Keep upper arms vertical.",
-  "Leg curl": "Face down on the machine. Curl heels toward glutes squeezing hamstrings at peak. Lower slowly.",
+  "Push-up": "Standard push-up with hands just wider than shoulder-width. Lower chest to floor, press back up. Keep body in a straight line — don't let hips sag.",
+  "Front raise": "Hold dumbbells in front of your thighs. Raise them forward to shoulder height with straight arms. Lower slowly. Don't swing.",
+  "Rear delt fly": "Hinge forward ~45°, dumbbells hanging. Raise arms out to the sides with a slight elbow bend. Squeeze the rear delts at the top.",
+  "Cable crunch": "Kneel below a cable with a rope attachment. Pull it down by crunching your abs — not pulling with your arms. Controlled and deliberate.",
 };
 
-const warmupGym = [
-  {name:"Light cardio (treadmill/bike)", duration:"3–5 min", tip:"RPE 2–3, very easy pace. Get blood flowing."},
-  {name:"Hip circle", duration:"10 reps each way", tip:"Feet shoulder-width, hands on hips, big slow circles."},
-  {name:"Leg swing front/back", duration:"10 reps each leg", tip:"Hold wall for balance. Swing leg in a controlled arc."},
-  {name:"Lateral leg swing", duration:"10 reps each leg", tip:"Swing side to side across the body. Opens hip flexors."},
-  {name:"Walking lunge with twist", duration:"8 reps each leg", tip:"Step into a lunge, rotate torso toward front knee."},
-  {name:"Inchworm", duration:"6 reps", tip:"Walk hands to plank, walk feet back. Feel the hamstring stretch."},
-  {name:"Cat-cow", duration:"8 reps", tip:"All fours. Arch up (cat), drop down (cow). Breathe with the movement."},
-  {name:"Ankle circles", duration:"10 reps each ankle", tip:"Slow circles to warm the ankle joint before squats."}
-];
-const warmupCardio = [
-  {name:"Slow walk", duration:"2 min", tip:"60–70% of target pace. Let the body ease in."},
-  {name:"Leg swing front/back", duration:"8 reps each leg", tip:"Use a wall. Gradually increase the swing arc."},
-  {name:"Hip circle", duration:"8 reps each direction", tip:"Loosen hip flexors before a long walk or swim."},
-  {name:"Calf raise + hold", duration:"10 reps", tip:"Rise onto toes, hold 2s, lower slowly."},
-  {name:"Lateral lunge", duration:"6 reps each side", tip:"Step wide, sink into the hip, hold 2s at the bottom."}
-];
-const cooldownGym = [
-  {name:"Pigeon pose", duration:"45–60s each side", tip:"Front leg bent 90°, back leg extended. Best hip opener."},
-  {name:"Supine figure-4", duration:"45s each side", tip:"Lie on back, ankle over knee, gently pull both legs toward you."},
-  {name:"Standing hamstring stretch", duration:"30s each leg", tip:"Heel on a bench, leg straight, hinge from the hips."},
-  {name:"Seated forward fold", duration:"45s", tip:"Legs straight, reach toward feet. Keep spine long."},
-  {name:"Child's pose", duration:"45s", tip:"Knees wide, arms forward, breathe into the lower back."},
-  {name:"Kneeling hip flexor stretch", duration:"30s each side", tip:"One knee down, drive hips forward. Crucial after squats."},
-  {name:"Calf wall stretch", duration:"30s each leg", tip:"Hands on wall, back heel flat. Lean forward."},
-  {name:"Lying spinal twist", duration:"30s each side", tip:"Knee across body, arms out. Let gravity work."}
-];
-const cooldownCardio = [
-  {name:"Standing calf stretch", duration:"30s each leg", tip:"Against a wall or step. Essential after long walks."},
-  {name:"Seated hamstring stretch", duration:"40s each leg", tip:"One leg extended, reach from the hip, keep spine tall."},
-  {name:"Standing hip flexor stretch", duration:"30s each side", tip:"Shallow lunge, push back hip forward gently."},
-  {name:"Supine figure-4", duration:"40s each side", tip:"Lie back, ankle over knee, slow and relaxed."},
-  {name:"Child's pose", duration:"45s", tip:"Arms extended, slow breaths, lengthen the lower back."},
-  {name:"Ankle roll", duration:"10 reps each ankle", tip:"Slow circles to decompress the ankle joint after swimming."}
-];
+// ── DAY-SPECIFIC STRETCHES ──
+// Each gym day has its own targeted warm-up and cool-down
+
+const stretches = {
+  // PUSH DAY (Monday) — chest, shoulders, triceps
+  warmup_push: [
+    {name:"Light cardio (bike/treadmill)", duration:"3–5 min", tip:"RPE 2–3. Get blood flowing before any upper body work."},
+    {name:"Arm circle", duration:"15 reps each direction", tip:"Small to large circles. Warms the shoulder joint fully before pressing."},
+    {name:"Cross-body shoulder swing", duration:"10 reps each arm", tip:"Swing each arm across the body. Loosens the rear delt and chest."},
+    {name:"Band pull-apart (or towel)", duration:"15 reps", tip:"Hold a band or towel wide, pull it apart across your chest. Activates the rotator cuff."},
+    {name:"Push-up (slow, wide grip)", duration:"8 reps", tip:"3 seconds down, 1 second up. Primes the chest and triceps with bodyweight before loading."},
+    {name:"Wall chest stretch", duration:"8 reps each side", tip:"Place palm on wall, rotate body away. Dynamic movement — don't hold, just pulse gently."},
+    {name:"Shoulder dislocate (band/towel)", duration:"10 reps", tip:"Hold wide, pass overhead and behind. Critical for shoulder mobility before pressing."}
+  ],
+  cooldown_push: [
+    {name:"Doorway chest stretch", duration:"40s each side", tip:"Forearm on door frame at 90°, rotate body away. Releases pec minor after all that pressing."},
+    {name:"Cross-body shoulder stretch", duration:"30s each arm", tip:"Pull one arm across your chest with the other. Targets rear delt and posterior shoulder."},
+    {name:"Tricep overhead stretch", duration:"30s each arm", tip:"Arm bent behind head, use other hand to gently push the elbow down."},
+    {name:"Child's pose with arm reach", duration:"45s each side", tip:"From child's pose, walk both hands to one side. Opens the lat and shoulder simultaneously."},
+    {name:"Prone shoulder stretch", duration:"30s each side", tip:"Lie face down, one arm out at 90°. Roll slightly onto that shoulder. Deep posterior capsule stretch."},
+    {name:"Neck side stretch", duration:"20s each side", tip:"Ear toward shoulder, breathe slowly. Releases upper traps which work hard during pressing."}
+  ],
+
+  // PULL DAY (Wednesday) — back, biceps
+  warmup_pull: [
+    {name:"Light cardio (bike/row)", duration:"3–5 min", tip:"RPE 2–3. Rowing machine is ideal if available — warms the exact muscles you'll use."},
+    {name:"Cat-cow", duration:"10 reps", tip:"All fours. Arch up (cat), drop down (cow). Mobilises the whole spine before loading the back."},
+    {name:"Band pull-apart", duration:"15 reps", tip:"Hold wide, pull apart across your chest. Activates the rhomboids and rear delts."},
+    {name:"Scapular wall slides", duration:"10 reps", tip:"Back and arms against wall, slide arms overhead. Teaches proper scapular movement for rows."},
+    {name:"Dead hang", duration:"20–30s", tip:"Hang from the pull-up bar with relaxed shoulders. Decompresses the spine and warms the grip."},
+    {name:"Face pull with band", duration:"12 reps", tip:"Light resistance, pull toward face with elbows high. Perfect rotator cuff activation before pulling."},
+    {name:"Inchworm", duration:"6 reps", tip:"Walk hands out to plank, back to feet. Warms the hamstrings and lower back."}
+  ],
+  cooldown_pull: [
+    {name:"Lat stretch on rack", duration:"40s each side", tip:"Hold a rack upright at shoulder height, sit back into your hip. Best lat stretch there is."},
+    {name:"Child's pose", duration:"45s", tip:"Knees wide, arms extended, forehead to floor. Decompresses the spine after all the loading."},
+    {name:"Seated forward fold", duration:"45s", tip:"Legs straight, reach toward feet. Releases the lower back and hamstrings."},
+    {name:"Supine spinal twist", duration:"30s each side", tip:"Lie on back, knee across body, arms out. Rotates the thoracic spine gently after rows."},
+    {name:"Bicep wall stretch", duration:"30s each arm", tip:"Palm on wall behind you, rotate body forward gently. Releases the bicep after curls."},
+    {name:"Upper trap stretch", duration:"20s each side", tip:"Ear toward shoulder, opposite arm behind back. Releases neck tension from pulling movements."}
+  ],
+
+  // SHOULDERS & CORE DAY (Friday)
+  warmup_shoulders: [
+    {name:"Light cardio (bike/treadmill)", duration:"3–5 min", tip:"RPE 2–3. Warm the body before isolated shoulder work."},
+    {name:"Arm circle", duration:"15 reps each direction", tip:"Small to large. Critical before any overhead pressing."},
+    {name:"Shoulder dislocate (band/towel)", duration:"10 reps", tip:"Hold wide, pass overhead and behind. Best shoulder mobility drill before pressing overhead."},
+    {name:"Band pull-apart", duration:"15 reps", tip:"Activates the rear delts — the most neglected part of the shoulder."},
+    {name:"Dead bug (slow)", duration:"6 reps each side", tip:"Activates deep core before your core work. Keep lower back glued to the floor."},
+    {name:"Cat-cow", duration:"8 reps", tip:"Mobilises the spine — important before core exercises that load the lumbar area."},
+    {name:"Side plank (light)", duration:"15s each side", tip:"Just a brief activation set. Wakes up the obliques before the main core session."}
+  ],
+  cooldown_shoulders: [
+    {name:"Cross-body shoulder stretch", duration:"30s each arm", tip:"Releases the rear delt and posterior shoulder after lateral raises and face pulls."},
+    {name:"Doorway chest stretch", duration:"40s each side", tip:"Releases the front of the shoulder after any pressing movements."},
+    {name:"Tricep overhead stretch", duration:"30s each arm", tip:"Essential if you did any overhead pressing or tricep isolation."},
+    {name:"Child's pose", duration:"45s", tip:"Releases the lower back and core after all the core work."},
+    {name:"Supine figure-4", duration:"40s each side", tip:"Releases hip flexors which get compressed during core exercises like planks and leg raises."},
+    {name:"Lying spinal twist", duration:"30s each side", tip:"Decompresses and rotates the spine. Great final stretch after a core-heavy session."},
+    {name:"Neck side stretch", duration:"20s each side", tip:"Upper traps work hard during shrugs and lateral raises. Give them a release."}
+  ],
+
+  // CARDIO DAYS — same for all three
+  warmup_cardio: [
+    {name:"Slow walk", duration:"2 min", tip:"60–70% of target pace. Let the body ease in."},
+    {name:"Leg swing front/back", duration:"8 reps each leg", tip:"Use a wall. Gradually increase the swing arc."},
+    {name:"Hip circle", duration:"8 reps each direction", tip:"Loosen hip flexors before a long walk or swim."},
+    {name:"Calf raise + hold", duration:"10 reps", tip:"Rise onto toes, hold 2s, lower slowly."},
+    {name:"Lateral lunge", duration:"6 reps each side", tip:"Step wide, sink into the hip, hold 2s at the bottom."}
+  ],
+  cooldown_cardio: [
+    {name:"Standing calf stretch", duration:"30s each leg", tip:"Against a wall or step. Essential after long walks."},
+    {name:"Seated hamstring stretch", duration:"40s each leg", tip:"One leg extended, reach from the hip, keep spine tall."},
+    {name:"Standing hip flexor stretch", duration:"30s each side", tip:"Shallow lunge, push back hip forward gently."},
+    {name:"Supine figure-4", duration:"40s each side", tip:"Lie back, ankle over knee, slow and relaxed."},
+    {name:"Child's pose", duration:"45s", tip:"Arms extended, slow breaths, lengthen the lower back."},
+    {name:"Ankle roll", duration:"10 reps each ankle", tip:"Slow circles to decompress the ankle joint after swimming."}
+  ]
+};
 
 const phases = [
   {
     id:1, label:"Month 1", fullLabel:"Phase 1 — Month 1",
-    desc:"Foundation: learn the movements, build consistency. Light weights, full-body focus, higher reps. Master form before adding load.",
+    desc:"Foundation: learn the movements and build consistency. Light weights, higher reps. Master form before adding load.",
     gymDays:[
-      {day:"Monday", focus:"Full Body A", exercises:[["Goblet squat","3×12"],["Dumbbell bench press","3×12"],["Seated row (machine)","3×12"],["Dumbbell shoulder press","3×10"],["Plank","3×30s"]]},
-      {day:"Wednesday", focus:"Full Body B", exercises:[["Leg press (machine)","3×12"],["Lat pulldown","3×12"],["Dumbbell Romanian deadlift","3×12"],["Dumbbell chest fly","3×12"],["Dead bug","3×8/side"]]},
-      {day:"Friday", focus:"Full Body C", exercises:[["Dumbbell lunges","3×10/leg"],["Incline dumbbell press","3×12"],["Seated cable row","3×12"],["Lateral raise","3×12"],["Glute bridge","3×15"]]}
+      {day:"Monday", focus:"Push — Chest & Triceps", type:"push", exercises:[
+        ["Dumbbell bench press","3×12"],["Incline dumbbell press","3×12"],["Dumbbell chest fly","3×12"],["Tricep pushdown","3×12"],["Push-up","3×10"]
+      ]},
+      {day:"Wednesday", focus:"Pull — Back & Biceps", type:"pull", exercises:[
+        ["Seated row (machine)","3×12"],["Lat pulldown","3×12"],["Face pulls","3×15"],["Dumbbell curl","3×12"],["Hammer curl","3×12"]
+      ]},
+      {day:"Friday", focus:"Shoulders & Core", type:"shoulders", exercises:[
+        ["Dumbbell shoulder press","3×12"],["Lateral raise","3×12"],["Front raise","3×12"],["Plank","3×30s"],["Dead bug","3×8/side"]
+      ]}
     ],
     cardioDays:[
-      {day:"Tuesday", focus:"Walk 30–40 min", detail:"Brisk walking, 100–110 steps/min. Conversational pace."},
-      {day:"Thursday", focus:"Walk 30–40 min", detail:"Steady brisk walk. RPE 4–5."},
-      {day:"Saturday", focus:"Walk or swim 30 min", detail:"Your choice — easy effort, RPE 4–5."}
+      {day:"Tuesday", focus:"Walk 30–40 min", detail:"Brisk walking, 100–110 steps/min. Conversational pace. 🧖 Sauna optional after."},
+      {day:"Thursday", focus:"Walk 30–40 min", detail:"Steady brisk walk. RPE 4–5. 🧖 Sauna optional after."},
+      {day:"Saturday", focus:"Walk or swim 30 min", detail:"Your choice — easy effort, RPE 4–5. 🧖 Sauna optional after."}
     ]
   },
   {
     id:2, label:"Month 2", fullLabel:"Phase 2 — Month 2",
-    desc:"Development: upper/lower splits, increased volume, slightly heavier weights. Build muscle and improve cardiovascular base.",
+    desc:"Development: increase volume and slightly heavier weights. Start adding barbell work. Build muscle and strength.",
     gymDays:[
-      {day:"Monday", focus:"Lower Body", exercises:[["Barbell back squat","4×10"],["Leg press","3×12"],["Romanian deadlift","3×10"],["Leg curl (machine)","3×12"],["Calf raises","4×15"]]},
-      {day:"Wednesday", focus:"Upper Body Push", exercises:[["Barbell bench press","4×10"],["Incline dumbbell press","3×10"],["Overhead press","3×10"],["Dumbbell chest fly","3×12"],["Tricep pushdown","3×12"]]},
-      {day:"Friday", focus:"Upper Body Pull", exercises:[["Lat pulldown","4×10"],["Seated cable row","4×10"],["Face pulls","3×15"],["Dumbbell curl","3×12"],["Hammer curl","3×12"]]}
+      {day:"Monday", focus:"Push — Chest & Triceps", type:"push", exercises:[
+        ["Barbell bench press","4×10"],["Incline dumbbell press","3×10"],["Dumbbell chest fly","3×12"],["Overhead press","3×10"],["Tricep pushdown","3×12"]
+      ]},
+      {day:"Wednesday", focus:"Pull — Back & Biceps", type:"pull", exercises:[
+        ["Barbell row","4×10"],["Lat pulldown","4×10"],["Seated cable row","3×10"],["Face pulls","3×15"],["Dumbbell curl","3×12"]
+      ]},
+      {day:"Friday", focus:"Shoulders & Core", type:"shoulders", exercises:[
+        ["Overhead press","4×10"],["Lateral raise","3×12"],["Rear delt fly","3×12"],["Plank","3×45s"],["Hanging knee raise","3×12"]
+      ]}
     ],
     cardioDays:[
-      {day:"Tuesday", focus:"Walk 40 min", detail:"Brisk walk, add slight incline if on treadmill."},
-      {day:"Thursday", focus:"Walk or swim 35 min", detail:"Steady effort, RPE 5–6."},
-      {day:"Saturday", focus:"Swim 30 min", detail:"Freestyle or breaststroke. 2 min on / 1 min easy."}
+      {day:"Tuesday", focus:"Walk 40 min", detail:"Brisk walk, add slight incline if on treadmill. 🧖 Sauna optional after."},
+      {day:"Thursday", focus:"Walk or swim 35 min", detail:"Steady effort, RPE 5–6. 🧖 Sauna optional after."},
+      {day:"Saturday", focus:"Swim 30 min", detail:"Freestyle or breaststroke. 2 min on / 1 min easy. 🧖 Sauna optional after."}
     ]
   },
   {
     id:3, label:"Month 3", fullLabel:"Phase 3 — Month 3",
-    desc:"Progression: Push/Pull/Legs split (Mon=Push, Wed=Legs, Fri=Pull), progressive overload, higher intensity cardio.",
+    desc:"Progression: heavier loads, progressive overload on all lifts, higher intensity cardio. Goal: real strength and fitness gains.",
     gymDays:[
-      {day:"Monday", focus:"Push — Chest, Shoulders, Triceps", exercises:[["Bench press","4×8"],["Overhead press","4×8"],["Incline dumbbell press","3×10"],["Dumbbell chest fly","3×12"],["Skull crushers","3×10"]]},
-      {day:"Wednesday", focus:"Legs + Core", exercises:[["Squat","4×8"],["Romanian deadlift","4×8"],["Leg press","3×10"],["Leg curl","3×12"],["Hanging knee raise","3×12"]]},
-      {day:"Friday", focus:"Pull — Back & Biceps", exercises:[["Barbell row","4×8"],["Lat pulldown","4×10"],["Seated cable row","3×10"],["Face pulls","3×15"],["EZ bar curl","3×10"]]}
+      {day:"Monday", focus:"Push — Chest & Triceps", type:"push", exercises:[
+        ["Bench press","4×8"],["Incline dumbbell press","3×10"],["Dumbbell chest fly","3×12"],["Overhead press","3×8"],["Skull crushers","3×10"]
+      ]},
+      {day:"Wednesday", focus:"Pull — Back & Biceps", type:"pull", exercises:[
+        ["Barbell row","4×8"],["Lat pulldown","4×10"],["Seated cable row","3×10"],["Face pulls","3×15"],["EZ bar curl","3×10"]
+      ]},
+      {day:"Friday", focus:"Shoulders & Core", type:"shoulders", exercises:[
+        ["Overhead press","4×8"],["Lateral raise","4×12"],["Rear delt fly","3×12"],["Cable crunch","3×15"],["Hanging knee raise","3×15"]
+      ]}
     ],
     cardioDays:[
-      {day:"Tuesday", focus:"Walk 45 min", detail:"Add intervals: 1 min fast / 2 min normal ×5."},
-      {day:"Thursday", focus:"Swim 35–40 min", detail:"5×4 min efforts with 1 min rest."},
-      {day:"Saturday", focus:"Walk + swim combo", detail:"Walk 20 min + swim 20 min."}
+      {day:"Tuesday", focus:"Walk 45 min", detail:"Add intervals: 1 min fast / 2 min normal ×5. 🧖 Sauna optional after."},
+      {day:"Thursday", focus:"Swim 35–40 min", detail:"5×4 min efforts with 1 min rest. 🧖 Sauna optional after."},
+      {day:"Saturday", focus:"Walk + swim combo", detail:"Walk 20 min + swim 20 min. 🧖 Sauna optional after."}
     ]
   }
 ];
 
 const tips = [
-  {icon:"📈", title:"Progressive overload", text:"Each phase increases volume or intensity. Don't rush ahead — Phase 1 is about building the habit and learning movements with good form."},
+  {icon:"🧖", title:"Sauna (2–3x per week)", text:"Best after gym sessions — muscles are already warm and the heat aids recovery and reduces soreness. Also fine after cardio. Never before a workout — it dehydrates you and reduces performance. Stay well hydrated before going in."},
   {icon:"🔥", title:"Warm-up rule", text:"Always do dynamic stretches before lifting. Never hold static stretches cold — they reduce muscle activation."},
   {icon:"🧘", title:"Cool-down rule", text:"Static holds after training, when muscles are warm. This is when you get the most long-term flexibility gains."},
   {icon:"🚶", title:"Cardio intensity", text:"Keep cardio conversational — you should be able to hold a chat. Walking and swimming complement the gym work perfectly."},
@@ -565,16 +824,20 @@ function renderGymDay(gday) {
   const wu = openSections.warmup;
   const mn = openSections.main;
   const cd = openSections.cooldown;
+  const warmup = stretches[`warmup_${gday.type}`] || [];
+  const cooldown = stretches[`cooldown_${gday.type}`] || [];
+  const wuTime = gday.type === 'push' ? '~10 min' : gday.type === 'pull' ? '~10 min' : '~8 min';
+  const cdTime = gday.type === 'shoulders' ? '~10 min' : '~10 min';
   return `
     <div class="section-block">
       <div class="section-header${wu?'':' collapsed'}" onclick="toggleSection('warmup')">
         <div class="section-dot warmup"></div>
         <span class="section-label-text" style="color:var(--warmup)">Warm-up</span>
-        <span class="section-time">~8 min</span>
+        <span class="section-time">${wuTime}</span>
         ${chevronSVG(wu)}
       </div>
       <div class="section-body warmup" style="max-height:${wu?'9999px':'0'}">
-        ${renderStretchRows(warmupGym, 'warmup')}
+        ${renderStretchRows(warmup, 'warmup')}
       </div>
     </div>
     <div class="section-block">
@@ -592,11 +855,11 @@ function renderGymDay(gday) {
       <div class="section-header${cd?'':' collapsed'}" onclick="toggleSection('cooldown')">
         <div class="section-dot cooldown"></div>
         <span class="section-label-text" style="color:var(--cooldown)">Cool-down</span>
-        <span class="section-time">~10 min</span>
+        <span class="section-time">${cdTime}</span>
         ${chevronSVG(cd)}
       </div>
       <div class="section-body cooldown" style="max-height:${cd?'9999px':'0'}">
-        ${renderStretchRows(cooldownGym, 'cooldown')}
+        ${renderStretchRows(cooldown, 'cooldown')}
       </div>
     </div>`;
 }
@@ -614,7 +877,7 @@ function renderCardioDay(cday) {
         ${chevronSVG(wu)}
       </div>
       <div class="section-body warmup" style="max-height:${wu?'9999px':'0'}">
-        ${renderStretchRows(warmupCardio, 'warmup')}
+        ${renderStretchRows(stretches.warmup_cardio, 'warmup')}
       </div>
     </div>
     <div class="section-block">
@@ -638,7 +901,7 @@ function renderCardioDay(cday) {
         ${chevronSVG(cd)}
       </div>
       <div class="section-body cooldown" style="max-height:${cd?'9999px':'0'}">
-        ${renderStretchRows(cooldownCardio, 'cooldown')}
+        ${renderStretchRows(stretches.cooldown_cardio, 'cooldown')}
       </div>
     </div>`;
 }
@@ -783,5 +1046,6 @@ document.getElementById('phaseTabs').innerHTML = allPhaseLabels.map((l, i) =>
 
 render();
 </script>
-</body>
-</html>
+
+
+</body></html>
